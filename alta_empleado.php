@@ -20,10 +20,10 @@
         <input name="pass" type="password" placeholder="ingrese su contaseña">
         <br><br>
         <select name="rol" id="rol">
-            <option value="0">seleccione un rol</option>
-            <option value="1">mesero</option>
-            <option value="2">cocinero</option>
-            <option value="3">gerente</option>
+            <option value="0">Seleccione un rol</option>
+            <option value="1">Mesero</option>
+            <option value="2">Cocinero</option>
+            <option value="3">Administrador</option>
         </select>
         <br><br>
         <input type="button" value="enviar" onclick="valida_empleado(); return false;">
