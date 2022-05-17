@@ -36,6 +36,7 @@ header .logo{
 
 header .navbar ul{
     list-style: none;
+    cursor: pointer;
 }
 
 header .navbar ul li{
