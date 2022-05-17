@@ -1,77 +1,97 @@
 <?php 
   include("conexion.php");
   if(isset($_POST['pizza'])){
-      $nombre = "pizza";
+     $id_producto = $_GET['updateid']; 
+     $nombre = "pizza";
       $descripcion = "pan, queso fundido y peperoni" ; 
       $precio = 50.30 ;
       $foraneo = $_POST['sel_pizza'];
     
-      $resultado = mysqli_query($conexion, "INSERT INTO producto(nombre,descripcion,precio,foraneo) VALUES ('$nombre','$descripcion','$precio','$foraneo')");
+      $resultado = mysqli_query($conexion, "UPDATE producto SET nombre='$nombre', descripcion='$descripcion',precio='$precio',foraneo='$foraneo' WHERE id_producto=$id_producto");
       if($resultado){
         header("location:display.php");
       }
   }
   if(isset($_POST['hamburguesa'])){
+    $id_producto = $_GET['updateid']; 
       $nombre = "hamburguesa";
       $descripcion = "Pan de ajonjoli, queso gratinado, tocino, carne de res";
       $precio = 40.99;
       $foraneo = $_POST['sel_hamburguesa'];
 
-      $resultado = mysqli_query($conexion, "INSERT INTO producto(nombre,descripcion,precio,foraneo) VALUES ('$nombre','$descripcion','$precio','$foraneo')");
-      
+      $resultado = mysqli_query($conexion, "UPDATE producto SET nombre='$nombre', descripcion='$descripcion',precio='$precio',foraneo='$foraneo' WHERE id_producto=$id_producto");
       if($resultado){
         header("location:display.php");
       }
   }
   if(isset($_POST['tacos'])){
+    $id_producto = $_GET['updateid']; 
     $nombre = "tacos";
     $descripcion = "Tortilla de maiz, bistek, cebolla, cilantro";
     $precio = 35.70;
     $foraneo = $_POST['sel_tacos'];
 
-    $resultado = mysqli_query($conexion, "INSERT INTO producto(nombre,descripcion,precio,foraneo) VALUES ('$nombre','$descripcion','$precio','$foraneo')");
+    $resultado = mysqli_query($conexion, "UPDATE producto SET nombre='$nombre', descripcion='$descripcion',precio='$precio',foraneo='$foraneo' WHERE id_producto=$id_producto");
       if($resultado){
         header("location:display.php");
       }
   
   }
   if(isset($_POST['coca'])){
+    $id_producto = $_GET['updateid']; 
     $nombre = "refresco";
     $descripcion = "Bebida gaseosa y refrescante";
     $precio = 9.45;
     $foraneo = $_POST['sel_coca'];
 
-    $resultado = mysqli_query($conexion, "INSERT INTO producto(nombre,descripcion,precio,foraneo) VALUES ('$nombre','$descripcion','$precio','$foraneo')");
+    $resultado = mysqli_query($conexion, "UPDATE producto SET nombre='$nombre', descripcion='$descripcion',precio='$precio',foraneo='$foraneo' WHERE id_producto=$id_producto");
       if($resultado){
         header("location:display.php");
       }
   
   }
   if(isset($_POST['limonada'])){
+    $id_producto = $_GET['updateid']; 
     $nombre = "limonada";
     $descripcion = "Mezcla de jugo de limon, azucar y agua";
     $precio = 11.55;
     $foraneo = $_POST['sel_limonada'];
 
-    $resultado = mysqli_query($conexion, "INSERT INTO producto(nombre,descripcion,precio,foraneo) VALUES ('$nombre','$descripcion','$precio','$foraneo')");
+    $resultado = mysqli_query($conexion, "UPDATE producto SET nombre='$nombre', descripcion='$descripcion',precio='$precio',foraneo='$foraneo' WHERE id_producto=$id_producto");
       if($resultado){
         header("location:display.php");
       }
   
    }
    if(isset($_POST['naranjada'])){
+    $id_producto = $_GET['updateid']; 
     $nombre = "naranjada";
     $descripcion = "Mezcla de jugo de naranja, azucar y agua";
     $precio = 11.44;
     $foraneo = $_POST['sel_naranjada'];
 
-    $resultado = mysqli_query($conexion, "INSERT INTO producto(nombre,descripcion,precio,foraneo) VALUES ('$nombre','$descripcion','$precio','$foraneo')");
+    $resultado = mysqli_query($conexion, "UPDATE producto SET nombre='$nombre', descripcion='$descripcion',precio='$precio',foraneo='$foraneo' WHERE id_producto=$id_producto");
       if($resultado){
         header("location:display.php");
       }
   
    }  
 
+  
+?>
+
+<?php 
+  include("conexion.php");
+  if(isset($_POST['register'])){
+      $id_nota = $_GET['updateid'];
+      $nota = $_POST['nota'];
+      $resultado = mysqli_query($conexion, "UPDATE producto SET nombre='$nombre', descripcion='$descripcion',precio='$precio',foraneo='$foraneo' WHERE id_producto=$id_producto");
+      if($resultado){
+        header("location:display.php");
+      }
+      
+
+  }
   
 ?>
 
@@ -86,7 +106,6 @@
 </head>
 <body>
     <h1>Komnadah</h1>
-    <button class="botonVolver"> <a href="../index.php">Volver</a> </button>
     <form method="post">
     <section class="items">
         <div class="item">

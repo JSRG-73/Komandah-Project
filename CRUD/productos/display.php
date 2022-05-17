@@ -14,6 +14,7 @@
 <body>
     <div class="container">
         <button class="btn btn-primary my-5"> <a href="producto.php" class="text-light">Agregar</a> </button>
+        <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
         <table class="table">
   <thead>
     <tr>
@@ -43,7 +44,8 @@
               <td>'.$precio.'</td> 
               <td>'.$foraneo.'</td> 
               <td>
-              <button class="btn btn-primary"><a href="ticket.php? updateid='.$id_producto.'" class="text-light" >Ticket</a></button>
+              <button class="btn btn-primary"><a href="update.php? updateid='.$id_producto.'" class="text-light" >Actualizar</a></button>
+              <button class="btn btn-danger"><a href="delete.php? deleteid='.$id_producto.'" class="text-light">Eliminar</a></button>
               </td>
               </tr>';
             }

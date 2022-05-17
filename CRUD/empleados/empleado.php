@@ -32,6 +32,7 @@
     <div class="container">
     <form method="post">
     <div class="form-group my-5" >
+    
         <label >Nombre</label>
         <input type="text" class="form-control" name="nombre" autocomplete="off" placeholder="Agregar nombre" >
         <label >Apellido</label>
@@ -42,6 +43,7 @@
         <input type="password" class="form-control" name="contrasena" autocomplete="off" placeholder="Agregar contrasena" >
     </div>
     <input type="submit" class="btn btn-primary name" name="register">
+    <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
     
     
     </form>

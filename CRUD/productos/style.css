@@ -51,6 +51,20 @@ h1{
     transition: 0,2s all;
 }
 
+.botonVolver{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0,2s all;
+}
+
 .form-submit-button {
     background: #0066A2;
     color: white;

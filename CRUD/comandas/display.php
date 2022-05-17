@@ -14,6 +14,8 @@
 <body>
     <div class="container">
         <button class="btn btn-primary my-5"> <a href="comanda.php" class="text-light">Agregar</a> </button>
+        <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
+        <table class="table">
         <table class="table">
   <thead>
     <tr>

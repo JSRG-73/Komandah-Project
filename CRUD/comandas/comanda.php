@@ -28,10 +28,12 @@
     <div class="container">
     <form method="post">
     <div class="form-group my-5" >
+    
         <label >Nota</label>
         <input type="text" class="form-control" name="nota" autocomplete="off" placeholder="Enter nota" >
     </div>
     <input type="submit" class="btn btn-primary name" name="register">
+    <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
     
     
     </form>
