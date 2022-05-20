@@ -10,10 +10,7 @@
       if($resultado){
         header("location:display.php");
       }
-      
-
   }
-  
 ?>
 
 <!doctype html>
@@ -38,7 +35,13 @@
         <label >Apellido</label>
         <input type="text" class="form-control" name="apellido" autocomplete="off" placeholder="Agregar apellido" >
         <label >Rol</label>
-        <input type="text" class="form-control" name="rol" autocomplete="off" placeholder="Agregar rol" >
+        <select class="form-control" name="rol">
+          <option value="0" disabled selected>Seleccionar Rol</option>
+          <option value="1">Gerente</option>
+          <option value="2">Mesero</option>
+          <option value="3">Cocinero</option>
+        </select>
+        <!-- <input type="text" class="form-control" name="rol" autocomplete="off" placeholder="Agregar rol" > -->
         <label >Contraseña</label>
         <input type="password" class="form-control" name="contrasena" autocomplete="off" placeholder="Agregar contrasena" >
     </div>
