@@ -1,0 +1,119 @@
+:root{
+    --azul: #2691d9;
+  }
+  body{
+    background-color: #202124;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://monteverdy.files.wordpress.com/2010/05/colorful-desktop-background-1920x12001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tablero{
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    outline-style: outset;
+    outline-width: 2px;
+    outline-color: #202124;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .tablero h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px groove var(--azul);
+  }
+  .tablero form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  form .field{
+    position: relative;
+    border-bottom: 2px groove var(--azul);
+    margin: 30px 0;
+  }
+  .field input{
+    width: 100%;
+    padding-left: 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-bottom: var(--azul);
+    background: none;
+    outline: none;
+  }
+  .field input{
+    width: 100%;
+    padding-left: 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .field label{
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    color: var(--azul);
+  }
+  #submit{
+    width: 100%;
+    height: 50px;
+    border: 1px groove;
+    background: var(--azul);
+    border-radius: 25px;
+    font-size: 18px;
+    color: ghostwhite;
+    font-weight: 700;
+    outline: none;
+  }
+  #submit:hover{
+    cursor: pointer;
+    animation: glowBox 1s ease-in-out infinite alternate;
+  }
+  #mensaje{
+    display: none;
+    margin: auto;
+    position: relative;
+    top: 70%;
+    width: 240px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: incorrect 0.8s ease-in-out infinite alternate;
+}
+  @keyframes glowBox {
+    from{
+      box-shadow: 0 0 15px transparent;
+    }
+    to{
+      box-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+  @keyframes incorrect {
+    from{
+      box-shadow: 0 0 15px transparent;
+    }
+    to{
+        box-shadow: 0 0 30px #c13434, 0 0 10px #c74d4d;
+    }
+  }

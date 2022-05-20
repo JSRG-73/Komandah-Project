@@ -1,3 +1,18 @@
+<?php
+    session_start();
+	if(isset($_SESSION['rol'])){
+        $rol = $_SESSION['rol'];
+		$idU = $_SESSION['idU'];
+        $usuario = $_SESSION['usuario'];
+        $nombre = $_SESSION['nombre'];
+        
+        if($rol != 1 && $rol == 2){
+            header("Location: ../Cocinero/index.php");
+        } else if($rol != 1 && $rol == 3){
+            header("Location: ../Mesero/index.php");
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
