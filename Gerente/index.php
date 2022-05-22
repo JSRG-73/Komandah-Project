@@ -42,11 +42,7 @@
                 <li> <a>Productos</a> 
                     <ul>
                         <!--Faltan los archivos de Baja y modificacion de productos-->
-<<<<<<< HEAD
                         <li><a href="Productos/producto.php">Alta de producto</a></li>
-=======
-                        <li><a href="CRUD/productos/producto.php">Alta de producto</a></li>
->>>>>>> c81ebaa21070323ac6ea53b47c59629768e82dfe
                         <li><a href="#">Modificacion de producto</a></li>
                         <li><a href="Productos/display.php">Mostrar productos</a></li>
                     </ul>
@@ -54,29 +50,17 @@
 
                 <li> <a>Comandas</a> 
                     <ul>
-<<<<<<< HEAD
                         <li><a href="Comandas/comanda.php">Alta de comanda</a></li>
                         <li><a href="Comandas/update.php">Modificacion de comanda</a></li>
                         <li><a href="Comandas/display.php">Mostrar comandas</a></li>
-=======
-                        <li><a href="CRUD/comandas/comanda.php">Alta de comanda</a></li>
-                        <li><a href="CRUD/comandas/update.php">Modificacion de comanda</a></li>
-                        <li><a href="CRUD/comandas/display.php">Mostrar comandas</a></li>
->>>>>>> c81ebaa21070323ac6ea53b47c59629768e82dfe
                     </ul>
                 </li>
 
                 <li> <a>Mesas</a> 
                     <ul>
-<<<<<<< HEAD
                         <li><a href="Mesas/mesa.php">Alta de mesa</a></li>
                         <li><a href="Mesas/update.php">Modificacion de mesa</a></li>
                         <li><a href="Mesas/display.php">Mostrar mesas</a></li>
-=======
-                        <li><a href="CRUD/mesas/mesa.php">Alta de mesa</a></li>
-                        <li><a href="CRUD/mesas/update.php">Modificacion de mesa</a></li>
-                        <li><a href="CRUD/mesas/display.php">Mostrar mesas</a></li>
->>>>>>> c81ebaa21070323ac6ea53b47c59629768e82dfe
                     </ul>
                 </li>
             </ul>
