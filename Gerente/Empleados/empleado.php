@@ -34,7 +34,11 @@
         <input type="password" class="form-control" name="contrasena" autocomplete="off" placeholder="Agregar contrasena" id="inputclave">
     </div>
     <input type="submit" class="btn btn-primary name" name="register" onclick="verificarLlenos(); return false;">
+<<<<<<< HEAD
     <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
+=======
+    <!--<button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button> -->
+>>>>>>> 05d5ead3500ba14148becbe2afb7667d3aca0461
 
     </form>
     </div>
