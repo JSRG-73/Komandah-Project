@@ -1,5 +1,5 @@
 <?php 
-  include("conexion.php");
+  include("../../Funciones/Conectar.php");
 ?>
 
 <!DOCTYPE html>
@@ -18,30 +18,28 @@
         <table class="table">
   <thead>
     <tr>
-      <th scope="col">Id_empleado</th>
+      <th scope="col">ID Empleado</th>
       <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
+      <th scope="col">Usuario</th>
       <th scope="col">Rol</th>
-      <th scope="col">Contraseña</th>
     </tr>
   </thead>
   <tbody>
       <?php
-      $sql = "SELECT * FROM usuarios"; 
-      $resultado = mysqli_query($conexion,$sql);
+      $con = conectar();
+      $sql = "SELECT id, nombre, usuario, rol FROM usuarios"; 
+      $resultado = mysqli_query($con,$sql);
       if($resultado){
           while($row=mysqli_fetch_assoc($resultado)){ 
-              $id_empleado = $row['id_empleado'];
+              $id_empleado = $row['id'];
               $nombre = $row['nombre'];
-              $apellido = $row['apellido'];
+              $usuario = $row['usuario'];
               $rol = $row['rol'];
-              $contrasena = $row['contrasena'];
               echo '<tr>
               <td>'.$id_empleado.'</td> 
               <td>'.$nombre.'</td> 
-              <td>'.$apellido.'</td> 
+              <td>'.$usuario.'</td> 
               <td>'.$rol.'</td> 
-              <td>'.$contrasena.'</td> 
               <td>
               <button class="btn btn-primary"><a href="update.php? updateid='.$id_empleado.'" class="text-light" >Actualizar</a></button>
               <button class="btn btn-danger"><a href="delete.php? deleteid='.$id_empleado.'" class="text-light">Eliminar</a></button>
