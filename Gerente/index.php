@@ -42,7 +42,7 @@
                 <li> <a>Productos</a> 
                     <ul>
                         <!--Faltan los archivos de Baja y modificacion de productos-->
-                        <li><a href="Productos/producto.php">Alta de producto</a></li>
+                        <li><a href="Productos/alta_producto.php">Alta de producto</a></li>
                         <li><a href="#">Modificacion de producto</a></li>
                         <li><a href="Productos/display.php">Mostrar productos</a></li>
                     </ul>

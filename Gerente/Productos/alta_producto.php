@@ -11,7 +11,7 @@
     <!-- Scripts -->
     <script src="./scripts.js"></script>
 
-    <title>Alta de empleado</title>
+    <title>Alta de productos</title>
   </head>
   <body>
     <div class="container">
@@ -19,19 +19,9 @@
     <div class="form-group my-5" >
     
         <label >Nombre</label>
-        <input type="text" class="form-control" name="nombre" autocomplete="off" placeholder="Agregar nombre" id="inputnombre">
-        <label >Usuario</label>
-        <input type="text" class="form-control" name="usuario" autocomplete="off" placeholder="Agregar usuario" id="inputusuario">
-        <label >Rol</label>
-        <select class="form-control" name="rol" id="inputrol">
-          <option value="" disabled selected>Seleccionar Rol</option>
-          <option value="1">Gerente</option>
-          <option value="2">Mesero</option>
-          <option value="3">Cocinero</option>
-        </select>
-        <!-- <input type="text" class="form-control" name="rol" autocomplete="off" placeholder="Agregar rol" > -->
-        <label >Contraseña</label>
-        <input type="password" class="form-control" name="contrasena" autocomplete="off" placeholder="Agregar contrasena" id="inputclave">
+        <input type="text" class="form-control" name="nombre" autocomplete="off" placeholder="Nombre del producto" id="inputnombre">
+        <label >Precio</label>
+        <input type="number" class="form-control" name="precio" autocomplete="off" id="inputprecio">
     </div>
     <input type="submit" class="btn btn-primary name" name="register" onclick="verificarLlenos(); return false;">
     <!-- La función verificarLlenos también envialos datos a la BD -->
@@ -40,7 +30,8 @@
     <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
 
     <!--<button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button> -->
-    
+
+
     </form>
     </div>
 
