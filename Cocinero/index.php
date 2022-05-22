@@ -35,7 +35,6 @@
                     <ul>
                         <!--Faltan los archivos de Baja y modificacion de productos-->
                         <li><a href="CRUD/productos/producto.php">Alta de producto</a></li>
-                        <li><a href="#">Baja de producto</a></li>
                         <li><a href="#">Modificacion de producto</a></li>
                         <li><a href="CRUD/productos/display.php">Mostrar productos</a></li>
                     </ul>
