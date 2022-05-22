@@ -10,8 +10,10 @@
 
     <!-- Scripts -->
     <script src="./scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>var UsuarioValido</script>
 
-    <title>CRUD</title>
+    <title>Gerente</title>
   </head>
   <body>
     <div class="container">
@@ -33,7 +35,7 @@
         <label >Contraseña</label>
         <input type="password" class="form-control" name="contrasena" autocomplete="off" placeholder="Agregar contrasena" id="inputclave">
     </div>
-    <input type="submit" class="btn btn-primary name" name="register" onclick="verificarLlenos(); return false;">
+    <input id="enviar" type="submit" class="btn btn-primary name" name="register" onclick="verificarLlenos(); return false;">
     <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
 
     </form>

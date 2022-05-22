@@ -32,7 +32,7 @@
             <ul>
                 <li><a>Empleados</a> 
                     <ul>
-                        <li><a href="CRUD/empleados/empleado.php">Alta de empleado</a></li>
+                        <li><a href="./empleado.php">Alta de empleado</a></li>
                         <li><a href="CRUD/empleados/delete.php">Baja de empleado</a></li>
                         <li><a href="CRUD/empleados/update.php">Modificacion de empleado</a></li>
                         <li><a href="CRUD/empleados/display.php">Mostrar empleados</a></li>

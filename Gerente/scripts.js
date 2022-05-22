@@ -18,3 +18,30 @@ function verificarLlenos(){
         alert("Faltan datos por ingresar");
     }
 }
+function VerificarUsuarioAlta() {
+    let user = $("#inputusuario").val();
+    if(user){
+        $.ajax({
+            type: "POST",
+            dataType: 'text',
+            url: '../Funciones/Verificar_Usuario.php',
+            data: ('usuario='+user),
+
+            success: function (res) {
+                if(res == 1){
+                    console.log("El Usuario ya existe");
+                    document.getElementById("enviar").disabled = true;
+                    document.getElementById("inputusuario").style.backgroundColor = "rgba(216, 112, 147, 0.7)";
+                    UsuarioValido = false;
+                } else{
+                    console.log("Correcto");
+                    document.getElementById("enviar").disabled = false;
+                    document.getElementById("inputusuario").style.backgroundColor = "rgba(127, 255, 212, 0.65)";
+                    UsuarioValido = true;
+                }
+            }, error: function(){
+                alert('Error: Archivo no encontrado.');
+            }
+        });
+    }
+}
