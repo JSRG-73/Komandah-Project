@@ -32,10 +32,10 @@
             <ul>
                 <li><a>Empleados</a> 
                     <ul>
-                        <li><a href="./empleado.php">Alta de empleado</a></li>
-                        <li><a href="CRUD/empleados/delete.php">Baja de empleado</a></li>
-                        <li><a href="CRUD/empleados/update.php">Modificacion de empleado</a></li>
-                        <li><a href="CRUD/empleados/display.php">Mostrar empleados</a></li>
+                        <li><a href="Empleados/empleado.php">Alta de empleado</a></li>
+                        <li><a href="Empleados/update.php">Modificacion de empleado</a></li>
+                        <li><a href="Empleados/display.php">Mostrar empleados</a></li>
+
                     </ul>
                 </li>
 
@@ -43,7 +43,6 @@
                     <ul>
                         <!--Faltan los archivos de Baja y modificacion de productos-->
                         <li><a href="CRUD/productos/producto.php">Alta de producto</a></li>
-                        <li><a href="#">Baja de producto</a></li>
                         <li><a href="#">Modificacion de producto</a></li>
                         <li><a href="CRUD/productos/display.php">Mostrar productos</a></li>
                     </ul>
@@ -52,7 +51,6 @@
                 <li> <a>Comandas</a> 
                     <ul>
                         <li><a href="CRUD/comandas/comanda.php">Alta de comanda</a></li>
-                        <li><a href="CRUD/comandas/delete.php">Baja de comanda</a></li>
                         <li><a href="CRUD/comandas/update.php">Modificacion de comanda</a></li>
                         <li><a href="CRUD/comandas/display.php">Mostrar comandas</a></li>
                     </ul>
@@ -61,7 +59,6 @@
                 <li> <a>Mesas</a> 
                     <ul>
                         <li><a href="CRUD/mesas/mesa.php">Alta de mesa</a></li>
-                        <li><a href="CRUD/mesas/delete.php">Baja de mesa</a></li>
                         <li><a href="CRUD/mesas/update.php">Modificacion de mesa</a></li>
                         <li><a href="CRUD/mesas/display.php">Mostrar mesas</a></li>
                     </ul>
