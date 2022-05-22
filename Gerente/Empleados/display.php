@@ -1,5 +1,5 @@
 <?php 
-  include("conexion.php");
+  include("../../Funciones/Conectar.php");
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
         <table class="table">
   <thead>
     <tr>
-      <th scope="col">Id_empleado</th>
+      <th scope="col">ID Empleado</th>
       <th scope="col">Nombre</th>
       <th scope="col">Apellido</th>
       <th scope="col">Rol</th>
@@ -28,7 +28,7 @@
   <tbody>
       <?php
       $sql = "SELECT * FROM usuarios"; 
-      $resultado = mysqli_query($conexion,$sql);
+      $resultado = mysqli_query($con,$sql);
       if($resultado){
           while($row=mysqli_fetch_assoc($resultado)){ 
               $id_empleado = $row['id_empleado'];
