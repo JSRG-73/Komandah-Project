@@ -55,14 +55,6 @@
                         <li><a href="Comandas/display.php">Mostrar comandas</a></li>
                     </ul>
                 </li>
-
-                <li> <a>Mesas</a> 
-                    <ul>
-                        <li><a href="Mesas/mesa.php">Alta de mesa</a></li>
-                        <li><a href="Mesas/update.php">Modificacion de mesa</a></li>
-                        <li><a href="Mesas/display.php">Mostrar mesas</a></li>
-                    </ul>
-                </li>
             </ul>
         </nav>
     </header>

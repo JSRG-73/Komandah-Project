@@ -40,8 +40,7 @@
     <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
 
     <!--<button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button> -->
-
-
+    
     </form>
     </div>
 

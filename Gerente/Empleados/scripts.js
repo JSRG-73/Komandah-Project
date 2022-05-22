@@ -10,7 +10,7 @@ function ValidarDatos(){
 function verificarLlenos(){
     if (ValidarDatos()){
         document.form1.method = 'post'
-        document.form1.action = 'querys.php'
+        document.form1.action = 'insertarEmpleado.php'
         document.form1.enctype= "multipart/form-data"
         document.form1.submit();
     }
