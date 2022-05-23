@@ -4,7 +4,7 @@
     $ban = 0;
     if(isset($_REQUEST['ID'])){
         $id = $_REQUEST['ID'];
-        $sql = "UPDATE productos SET activo = 0 WHERE id = $id";
+        $sql = "UPDATE productos SET activo = 0 WHERE id_producto = $id";
         $res = $con->query($sql);
         $ban = 1;
     }
