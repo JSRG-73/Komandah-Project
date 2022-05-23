@@ -17,6 +17,7 @@
 
 </head>
 
+
 <body>
     <div class="container">
         <form name="form1">
@@ -28,7 +29,7 @@
                 <!--seleccionar mesa -->
 
                 <h5>Mesa</h5>
-
+                <select id="numero_mesas" name="numero_mesas" >
                 <?php
                 require "../../Funciones/Conectar.php";
                 $con = conectar();
@@ -38,15 +39,14 @@
                 $row = mysqli_fetch_assoc($resultado);
                 $contador = $row['contador'];
 
-                echo '<select id="numero_mesas" name="numero_mesas" >';
 
                 foreach (range(1, $contador) as $x) {
 
                     echo '<option value=' . $x . '>' . $x . '</option>';
                 }
-                echo '</select>';
-                ?>
 
+                ?>
+                </select>
                 <br>
                 <br>
                 <br>
