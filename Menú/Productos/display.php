@@ -9,10 +9,10 @@ if(isset($_SESSION['rol'])){
       $nombre = $_SESSION['nombre'];
       
       if($rol != 1 && $rol != 2 && $rol != 3){
-          header("Location: ../../Funciones/Redireccion.php");
+          header("Location: ../Funciones/Redireccion.php");
       }
   } else{
-      header("Location: ../../index.php");
+      header("Location: ../index.php");
   }
 ?>
 
