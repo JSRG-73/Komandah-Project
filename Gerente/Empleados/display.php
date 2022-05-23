@@ -27,7 +27,7 @@
   <tbody>
       <?php
       $con = conectar();
-      $sql = "SELECT id, nombre, usuario, rol FROM usuarios"; 
+      $sql = "SELECT id, nombre, usuario, rol FROM usuarios where activo = 1"; 
       $resultado = mysqli_query($con,$sql);
       if($resultado){
           while($row=mysqli_fetch_assoc($resultado)){ 
@@ -41,7 +41,7 @@
               <td>'.$usuario.'</td> 
               <td>'.$rol.'</td> 
               <td>
-              <button class="btn btn-primary"><a href="update.php? updateid='.$id_empleado.'" class="text-light" >Actualizar</a></button>
+              <button class="btn btn-primary"><a href="update.php? updateid='.$id_empleado.'" class="text-light" >Modificar</a></button>
               <button class="btn btn-danger"><a href="delete.php? deleteid='.$id_empleado.'" class="text-light">Eliminar</a></button>
               </td>
               </tr>';
