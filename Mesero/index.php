@@ -33,23 +33,18 @@
             <ul>
                 <li> <a>Productos</a> 
                     <ul>
-                        <li><a href="CRUD/productos/display.php">Mostrar productos</a></li>
+                        <li><a href="Productos/display.php">Mostrar productos</a></li>
                     </ul>
                 </li>
 
                 <li> <a>Comandas</a> 
                     <ul>
-                        <li><a href="CRUD/comandas/comanda.php">Alta de comanda</a></li>
-                        <li><a href="CRUD/comandas/update.php">Modificacion de comanda</a></li>
-                        <li><a href="CRUD/comandas/display.php">Mostrar comandas</a></li>
+                        <li><a href="Comandas/comanda.php">Alta de comanda</a></li>
+                        <li><a href="Comandas/update.php">Modificacion de comanda</a></li>
+                        <li><a href="Comandas/display.php">Mostrar comandas</a></li>
                     </ul>
                 </li>
 
-                <li> <a>Mesas</a> 
-                    <ul>
-                        <li><a href="CRUD/mesas/display.php">Mostrar mesas</a></li>
-                    </ul>
-                </li>
             </ul>
         </nav>
     </header>
