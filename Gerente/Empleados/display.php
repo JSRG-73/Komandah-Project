@@ -38,6 +38,15 @@
                       $nombre = $row['nombre'];
                       $usuario = $row['usuario'];
                       $rol = $row['rol'];
+                      if($rol == 1){
+                        $rol = 'Gerente';
+                      }
+                      else if($rol == 2){
+                        $rol = 'Cocinero';
+                      }
+                      else{
+                        $rol = 'Mesero';
+                      }
                       echo '<tr>
                         <td>'.$id.'</td> 
                         <td>'.$nombre.'</td> 

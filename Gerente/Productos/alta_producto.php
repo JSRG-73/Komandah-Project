@@ -25,7 +25,7 @@
         <input type="text" class="form-control" name="descripcion" autocomplete="off" placeholder="Descripcion del producto" id="inputdesc">
 
         <label >Precio</label>
-        <input type="number" class="form-control" name="precio" autocomplete="off" id="inputprecio" min=0.1 max=1000000>
+        <input type="number" class="form-control" name="precio" autocomplete="off" id="inputprecio" min=0.1 max=1000000 >
     </div>
     <input type="submit" class="btn btn-primary name" name="register" onclick="verificarLlenos(); return false;">
     <!-- La función verificarLlenos también envialos datos a la BD -->
