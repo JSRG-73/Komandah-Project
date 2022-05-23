@@ -44,7 +44,7 @@
                         <td>'.$usuario.'</td> 
                         <td>'.$rol.'</td> 
                         <td>
-                          <button class="btn btn-warning"><a href="delete.php?id='.$id.'" class="text-light">(Pending)</a></button>
+                        <button class="btn btn-warning"onclick=editarEmpleado('.$id.');>Editar</a></button>
                           <button class="btn btn-danger"onclick=eliminarEmpleado('.$id.');>Eliminar</a></button>
                         </td>
                       </tr>';
