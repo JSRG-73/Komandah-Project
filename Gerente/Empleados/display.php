@@ -16,46 +16,46 @@
 </head>
 <body>
     <div class="container">
-        <button class="btn btn-success my-5"> <a href="empleado.php" class="text-light">Agregar</a> </button>
-        <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Inicio</a> </button>
+        <button class="btn btn-primary my-5"> <a href="empleado.php" class="text-light">Agregar</a> </button>
+        <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
         <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">ID Empleado</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Usuario</th>
-              <th scope="col">Rol</th>
-            </tr>
-          </thead>
-          <tbody>
-              <?php
-              $con = conectar();
-              $sql = "SELECT id, nombre, usuario, rol FROM usuarios where activo = 1"; 
-              $resultado = mysqli_query($con,$sql);
-              if($resultado){
-                  while($row=mysqli_fetch_assoc($resultado)){ 
-                      $id = $row['id'];
-                      $nombre = $row['nombre'];
-                      $usuario = $row['usuario'];
-                      $rol = $row['rol'];
-                      echo '<tr>;
-                      <td>'.$id.'</td> 
-                      <td>'.$nombre.'</td> 
-                      <td>'.$usuario.'</td> 
-                      <td>'.$rol.'</td> 
-                      <td>
-                      <button class="btn btn-warning"><a href="delete.php?id='.$id.'" class="text-light">(Pending)</a></button>
-                      <button class="btn btn-danger"onclick=eliminarEmpleado('.$id.');>Eliminar</a></button>
-                      </td>
+  <thead>
+    <tr>
+      <th scope="col">ID Empleado</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Rol</th>
+    </tr>
+  </thead>
+  <tbody>
+      <?php
+      $con = conectar();
+      $sql = "SELECT id, nombre, usuario, rol FROM usuarios"; 
+      $resultado = mysqli_query($con,$sql);
+      if($resultado){
+          while($row=mysqli_fetch_assoc($resultado)){ 
+              $id = $row['id'];
+              $nombre = $row['nombre'];
+              $usuario = $row['usuario'];
+              $rol = $row['rol'];
+              echo '<tr>;
+              <td>'.$id.'</td> 
+              <td>'.$nombre.'</td> 
+              <td>'.$usuario.'</td> 
+              <td>'.$rol.'</td> 
+              <td>
+              <button class="btn btn-danger"><a href="delete.php?id='.$id.'" class="text-light">(Pending)</a></button>
+              <button class=btn btn-primary my-5 onclick=eliminarEmpleado('.$id.');>Eliminar</a></button>
+              </td>
               </tr>';
-                    }
-              }
-              ?>
-          </tbody>
-        </table>
-      </div>
-      <div class="mensaje" id="mensajeEliminar">
-          Mensaje
-      </div>
+            }
+      }
+      ?>
+  </tbody>
+</table>
+    </div>
+    <div class="mensaje" id="mensajeEliminar">
+        Mensaje
+    </div>
 </body>
 </html>
