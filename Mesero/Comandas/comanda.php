@@ -13,8 +13,8 @@
     
         <label >Mesa</label>
         <select id="cars" name="carlist" form="carform">
-
-</select>
+        
+        </select>
         <?php
         require "../../Funciones/Conectar.php";
       $con = conectar();
@@ -26,7 +26,7 @@
             echo $contador;
             foreach(range(1,$contador) as $x){
 
-                echo $x;
+                echo <option value=$contador>$contador</option>$x;
 
             }
       ?>
