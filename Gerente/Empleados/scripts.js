@@ -51,3 +51,25 @@ function MostrarMensaje(mensaje, band, time){    /* ID + true/false + tiempo en 
         document.getElementById(mensaje).style.display = "none";
     }
 }
+function editarEmpleado(id){
+    window.location.href = './modificar_empleado.php?id='+id;
+}
+function VerificarDatosEditar(){
+    let datosllenos = document.getElementById("inputnombre").value !== "" ? true : false;
+    datosllenos = datosllenos && document.getElementById("inputusuario").value !== "" ? true : false;
+    datosllenos = datosllenos && document.getElementById("inputrol").value !== "" ? true : false;
+    
+    return datosllenos;
+}
+function ActualizarDatos(){
+    if(VerificarDatosEditar()){
+        document.form1.method = "post"
+        document.form1.action = "./actualizar_empleado.php"
+        document.form1.enctype="multipart/form-data"
+        document.form1.submit();
+    }
+    else{
+        $("#mensaje").html("Faltan datos por llenar");
+        MostrarMensaje("mensaje", true, 5000);
+    }
+}
