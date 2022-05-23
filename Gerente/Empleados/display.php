@@ -13,8 +13,10 @@
 </head>
 <body>
     <div class="container">
-        <button class="btn btn-primary my-5"> <a href="empleado.php" class="text-light">Agregar</a> </button>
+        <button class="btn btn-success my-5"> <a href="empleado.php" class="text-light">Agregar</a> </button>
         <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
+        <button class="btn btn-warning my-5"><a href="#" class="text-light" >Modificar</a></button>
+        <button class="btn btn-danger my-5"><a href="#" class="text-light">Eliminar</a></button>
         <table class="table">
   <thead>
     <tr>
@@ -40,10 +42,6 @@
               <td>'.$nombre.'</td> 
               <td>'.$usuario.'</td> 
               <td>'.$rol.'</td> 
-              <td>
-              <button class="btn btn-primary"><a href="update.php? updateid='.$id_empleado.'" class="text-light" >Modificar</a></button>
-              <button class="btn btn-danger"><a href="delete.php? deleteid='.$id_empleado.'" class="text-light">Eliminar</a></button>
-              </td>
               </tr>';
             }
       }
