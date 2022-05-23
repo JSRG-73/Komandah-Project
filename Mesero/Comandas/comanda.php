@@ -39,7 +39,7 @@
                 $row = mysqli_fetch_assoc($resultado);
                 $contador = $row['contador'];
 
-                echo '<select id="numero_mesas" name="numero_mesas" form="numero_mesas">';
+                echo '<select id="numero_mesas" name="numero_mesas" form="form1">';
 
                 foreach (range(1, $contador) as $x) {
 
@@ -62,7 +62,7 @@
 
                     <?php
                     $con = conectar();
-                    $sql = "SELECT id_producto, nombre FROM productos";
+                    $sql = "SELECT id_producto, nombre FROM productos WHERE activo = 1";
                     $resultado = mysqli_query($con, $sql);
                     if ($resultado) {
                         while ($row = mysqli_fetch_assoc($resultado)) {
@@ -71,9 +71,10 @@
                             echo '
                         <tr>
 
-                          <td>' . $nombre . '               </td> 
+                          <td>' . $nombre . '</td> 
+                          <td>' . $id . '</td> 
                           <td>
-                          <select name="cars" id="cars">
+                          <select name="Cantidaddeproductos" id="producto'.$id.'">
                           
                           <option selected="selected" value="0">0</option>
                           <option value="1">1</option>
@@ -112,11 +113,12 @@
                 <br>
                 <h5>Notas</h5>
 
+
+                <!--Notas-->
+
                 <textarea id="notas" name="notas" rows="4" cols="50" maxlength="254"></textarea>
 
-
             </div>
-
 
             <input type="submit" class="btn btn-primary name" name="register" value="Agregar comanda" onclick="verificarLlenos(); return false;">
             <!-- La función verificarLlenos también envialos datos a la BD -->
