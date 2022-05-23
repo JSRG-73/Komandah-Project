@@ -1,20 +1,3 @@
-<?php 
-  include("../../Funciones/Conectar.php");
-
-  session_start();
-if(isset($_SESSION['rol'])){
-      $rol = $_SESSION['rol'];
-  $idU = $_SESSION['idU'];
-      $usuario = $_SESSION['usuario'];
-      $nombre = $_SESSION['nombre'];
-      
-      if($rol != 1 && $rol != 2 && $rol != 3){
-          header("Location: ../../Funciones/Redireccion.php");
-      }
-  } else{
-      header("Location: ../../index.php");
-  }
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +17,6 @@ if(isset($_SESSION['rol'])){
 
 </head>
 
-
 <body>
     <div class="container">
         <form name="form1">
@@ -46,40 +28,30 @@ if(isset($_SESSION['rol'])){
                 <!--seleccionar mesa -->
 
                 <h5>Mesa</h5>
-                <select id="mesa" name="mesa" >
+
                 <?php
                 require "../../Funciones/Conectar.php";
                 $con = conectar();
                 $sql = "SELECT COUNT(*) AS contador FROM mesas;";
                 $resultado = $con->query($sql);
+
                 $row = mysqli_fetch_assoc($resultado);
                 $contador = $row['contador'];
 
+                echo '<select id="numero_mesas" name="numero_mesas" >';
 
                 foreach (range(1, $contador) as $x) {
 
                     echo '<option value=' . $x . '>' . $x . '</option>';
                 }
-
+                echo '</select>';
                 ?>
-                </select>
+
                 <br>
                 <br>
                 <br>
                 <br>
 
-                <?php
-
-                require "../../Funciones/Conectar.php";
-                $con = conectar();
-                $sql = "SELECT COUNT(*) AS contador FROM mesas;";
-                $resultado = $con->query($sql);
-                $row = mysqli_fetch_assoc($resultado);
-                $contador = $row['contador'];
-
-                echo '<input name="cmesas" type="hidden" value="'.$contador.'" form ="form1">';
-
-                ?>
 
                 <!--seleccionar producto -->
 
