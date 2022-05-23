@@ -33,7 +33,6 @@
                 <li><a>Empleados</a> 
                     <ul>
                         <li><a href="Empleados/empleado.php">Alta de empleado</a></li>
-                        <li><a href="Empleados/update.php">Modificacion de empleado</a></li>
                         <li><a href="Empleados/display.php">Mostrar empleados</a></li>
 
                     </ul>
@@ -43,7 +42,6 @@
                     <ul>
                         <!--Faltan los archivos de Baja y modificacion de productos-->
                         <li><a href="Productos/alta_producto.php">Alta de producto</a></li>
-                        <li><a href="#">Modificacion de producto</a></li>
                         <li><a href="Productos/display.php">Mostrar productos</a></li>
                     </ul>
                 </li>
@@ -51,7 +49,6 @@
                 <li> <a>Comandas</a> 
                     <ul>
                         <li><a href="Comandas/comanda.php">Alta de comanda</a></li>
-                        <li><a href="Comandas/update.php">Modificacion de comanda</a></li>
                         <li><a href="Comandas/display.php">Mostrar comandas</a></li>
                     </ul>
                 </li>
