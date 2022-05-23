@@ -1,5 +1,17 @@
-<?php 
-  include("../../Funciones/Conectar.php");
+<?php
+    session_start();
+	if(isset($_SESSION['rol'])){
+        $rol = $_SESSION['rol'];
+		$idU = $_SESSION['idU'];
+        $usuario = $_SESSION['usuario'];
+        $nombre = $_SESSION['nombre'];
+        
+        if($rol != 1){
+            header("Location: ../../Funciones/Redireccion.php");
+        }
+    } else{
+        header("Location: ../../index.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +41,7 @@
           </thead>
           <tbody>
               <?php
+              require "Conectar.php";
               $con = conectar();
               $sql = "SELECT id, nombre, usuario, rol FROM usuarios where activo = 1"; 
               $resultado = mysqli_query($con,$sql);

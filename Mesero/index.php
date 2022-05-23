@@ -6,11 +6,11 @@
         $usuario = $_SESSION['usuario'];
         $nombre = $_SESSION['nombre'];
         
-        if($rol != 3 && $rol == 2){
-            header("Location: ../Cocinero/index.php");
-        } else if($rol != 3 && $rol == 1){
-            header("Location: ../Gerente/index.php");
+        if($rol != 3){
+            header("Location: ../Funciones/Redireccion.php");
         }
+    } else{
+        header("Location: ../index.php");
     }
 ?>
 

@@ -11,14 +11,11 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    
-
 </head>
 
 <body>
     <div class="container">
-        <form method="post" name="form1">
+        <form name="form1">
             <div class="form-group my-5">
 
                 <h1>Crear Komandas</h1>
@@ -120,7 +117,7 @@
 
             </div>
 
-            <input type="submit" class="btn btn-primary name" name="register" value="Agregar comanda" onclick="verificarLlenos(); return false;">
+            <input type="button" class="btn btn-primary name" name="register" value="Agregar comanda" onclick="verificarLlenos(); return false;">
             <!-- La función verificarLlenos también envialos datos a la BD -->
 
             <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
