@@ -18,15 +18,13 @@
 
 <body>
     <div class="tablero">
-        <h1>Login</h1>
+        <h1>LOGIN</h1>
             <form name="forma">
                 <div class="field">
-                    <input name="user" type="text" id="user">
-                    <label>Introduce tu usuario</label>
+                    <input name="user" type="text" id="user" placeholder="Usuario">
                 </div>
                 <div class="field">
-                    <input name="pass" type="password" id="pass">
-                    <label>Introduce tu contraseña</label>
+                    <input name="pass" type="password" id="pass" placeholder="Contraseña">
                 </div>
                 <input id="submit" type="submit" value="Login" onclick="checkLogin(); return false">
                 </form>

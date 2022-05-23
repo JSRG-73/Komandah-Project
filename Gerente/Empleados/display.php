@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="container">
-        <button class="btn btn-success my-5"> <a href="empleado.php" class="text-light">Agregar</a></button>
+        <button class="btn btn-success my-5"> <a href="empleado.php" class="text-light">Agregar Empleado</a></button>
         <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Inicio</a></button>
         <table class="table">
           <thead>

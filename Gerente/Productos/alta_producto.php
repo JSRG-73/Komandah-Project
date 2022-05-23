@@ -37,15 +37,15 @@
         <input type="text" class="form-control" name="nombre" autocomplete="off" placeholder="Nombre del producto" id="inputnombre">
         
         <label >Descripcion</label>
-        <input type="text" class="form-control" name="descripcion" autocomplete="off" placeholder="Descripcion del producto" id="inputdesc">
+        <textarea type="text" class="form-control" name="descripcion" autocomplete="off" placeholder="Descripcion del producto" id="inputdesc"></textarea>
 
         <label >Precio</label>
         <input type="number" class="form-control" name="precio" autocomplete="off" id="inputprecio" min=0.1 max=1000000 >
     </div>
-    <input type="submit" class="btn btn-primary name" name="register" onclick="verificarLlenos(); return false;">
+
+    <input type="submit" class="btn btn-success name" name="register" onclick="verificarLlenos(); return false;">
     <!-- La función verificarLlenos también envialos datos a la BD -->
 
-    
     <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
 
     <!--<button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button> -->

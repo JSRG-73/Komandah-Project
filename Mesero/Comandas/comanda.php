@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts.js"></script>
+
+
+
 </head>
 
 <body>
@@ -20,8 +24,6 @@
 
                 <h1>Crear Komandas</h1>
 
-                <br>
-                <br>
                 <br>
                 <!--seleccionar mesa -->
 
@@ -36,7 +38,7 @@
                 $row = mysqli_fetch_assoc($resultado);
                 $contador = $row['contador'];
 
-                echo '<select id="numero_mesas" name="numero_mesas" form="form1">';
+                echo '<select id="numero_mesas" name="numero_mesas" >';
 
                 foreach (range(1, $contador) as $x) {
 
@@ -71,7 +73,7 @@
                           <td>' . $nombre . '</td> 
                           <td>' . $id . '</td> 
                           <td>
-                          <select name="Cantidaddeproductos" id="producto'.$id.'">
+                          <select name="producto' . $id . '" id="producto' . $id . '">
                           
                           <option selected="selected" value="0">0</option>
                           <option value="1">1</option>
@@ -120,9 +122,9 @@
             <input type="button" class="btn btn-primary name" name="register" value="Agregar comanda" onclick="verificarLlenos(); return false;">
             <!-- La función verificarLlenos también envialos datos a la BD -->
 
-            <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
-
         </form>
+
+        <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
     </div>
 </body>
 
