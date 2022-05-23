@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/display.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./scripts.js"></script>
 </head>
 <body>
     <div class="container">
@@ -37,14 +38,14 @@
               $nombre = $row['nombre'];
               $usuario = $row['usuario'];
               $rol = $row['rol'];
-              echo '<tr>
+              echo '<tr>;
               <td>'.$id.'</td> 
               <td>'.$nombre.'</td> 
               <td>'.$usuario.'</td> 
               <td>'.$rol.'</td> 
               <td>
-              <button class=\'button\' onclick=\'eliminarEmpleado($id);\'>Actualizar</a></button>
-              <button class="btn btn-danger"><a href="delete.php?id='.$id.'" class="text-light">Eliminar</a></button>
+              <button class="btn btn-danger"><a href="delete.php?id='.$id.'" class="text-light">(Pending)</a></button>
+              <button class=btn btn-primary my-5 onclick=eliminarEmpleado('.$id.');>Eliminar</a></button>
               </td>
               </tr>';
             }
