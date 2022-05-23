@@ -40,7 +40,6 @@
                 <li> <a>Comandas</a> 
                     <ul>
                         <li><a href="Comandas/comanda.php">Alta de comanda</a></li>
-                        <li><a href="Comandas/update.php">Modificacion de comanda</a></li>
                         <li><a href="Comandas/display.php">Mostrar comandas</a></li>
                     </ul>
                 </li>

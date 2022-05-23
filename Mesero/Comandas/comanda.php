@@ -58,20 +58,27 @@
                 <h4>Productos</h4>
 
                 <table id="customers">
+                    <tr>
+                        <th scope="col">ID Producto</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio</th>
+                    </tr>
 
                     <?php
                     $con = conectar();
-                    $sql = "SELECT id_producto, nombre FROM productos WHERE activo = 1";
+                    $sql = "SELECT id_producto, nombre,precio FROM productos WHERE activo = 1";
                     $resultado = mysqli_query($con, $sql);
                     if ($resultado) {
                         while ($row = mysqli_fetch_assoc($resultado)) {
                             $id = $row['id_producto'];
                             $nombre = $row['nombre'];
+                            $precio = $row['precio'];
                             echo '
                         <tr>
 
-                          <td>' . $nombre . '</td> 
                           <td>' . $id . '</td> 
+                          <td>' . $nombre . '</td> 
                           <td>
                           <select name="producto' . $id . '" id="producto' . $id . '">
                           
@@ -98,6 +105,8 @@
                           <option value="20">20</option>
 
                         </select>
+
+                        <td>$'.$precio .'</td> 
                           </td>
                         </tr>';
                         }
@@ -119,12 +128,13 @@
 
             </div>
 
-            <input type="button" class="btn btn-primary name" name="register" value="Agregar comanda" onclick="verificarLlenos(); return false;">
+            <input type="button" class="btn btn-success name" name="register" value="Agregar comanda" onclick="verificarLlenos(); return false;">
             <!-- La función verificarLlenos también envialos datos a la BD -->
 
-        </form>
+            
+            <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
 
-        <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Volver</a> </button>
+        </form>
     </div>
 </body>
 
