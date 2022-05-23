@@ -33,7 +33,7 @@
         <label >Contraseña</label>
         <input type="password" class="form-control" name="contrasena" autocomplete="off" placeholder="Agregar contrasena" id="inputclave">
     </div>
-    <input type="submit" class="btn btn-primary name" name="register" onclick="verificarLlenos(); return false;">
+    <input type="submit" class="btn btn-success name" name="register" onclick="verificarLlenos(); return false;">
     <!-- La función verificarLlenos también envialos datos a la BD -->
 
     

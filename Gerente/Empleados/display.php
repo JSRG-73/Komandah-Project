@@ -38,7 +38,7 @@
                       $nombre = $row['nombre'];
                       $usuario = $row['usuario'];
                       $rol = $row['rol'];
-                      echo '<tr>;
+                      echo '<tr>
                         <td>'.$id.'</td> 
                         <td>'.$nombre.'</td> 
                         <td>'.$usuario.'</td> 
