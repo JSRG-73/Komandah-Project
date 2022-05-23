@@ -26,8 +26,8 @@
         <select class="form-control" name="rol" id="inputrol">
           <option value="" disabled selected>Seleccionar Rol</option>
           <option value="1">Gerente</option>
-          <option value="2">Mesero</option>
-          <option value="3">Cocinero</option>
+          <option value="2">Cocinero</option>
+          <option value="3">Mesero</option>
         </select>
         <!-- <input type="text" class="form-control" name="rol" autocomplete="off" placeholder="Agregar rol" > -->
         <label >Contraseña</label>

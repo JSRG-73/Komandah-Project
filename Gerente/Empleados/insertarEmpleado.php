@@ -5,6 +5,8 @@
     $usuario = $_REQUEST['usuario'];
     $rol = $_REQUEST['rol'];
     $contrasena = $_REQUEST['contrasena'];
-    $sql = "INSERT INTO usuarios(nombre,usuario,pass,rol) VALUES ('$nombre','$usuario','$contrasena','$rol');";
+    $passEnc = md5($contrasena);
+    $sql = "INSERT INTO usuarios(nombre,usuario,pass,rol) VALUES ('$nombre','$usuario','$passEnc ','$rol');";
     $respuesta = $conexion -> query($sql);
+    header("Location: ./display.php");
 ?>

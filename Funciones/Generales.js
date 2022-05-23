@@ -17,12 +17,12 @@ function checkLogin(){
                     window.location.href = './Mesero/Index.php';
                 }
                 else if(res <1 || res > 4){
-                    window.location.href = './Login/Error.php';
+                    $('#mensaje').html('Datos incorrectos');
+                    MostrarMensaje("mensaje", true, 5000);
                 }
                 else{
                     $('#mensaje').html('Datos incorrectos');
                     MostrarMensaje("mensaje", true, 5000);
-                    console.log(res);
                 }
             }, error: function(){
                 alert('Error: Archivo no encontrado.');

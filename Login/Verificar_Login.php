@@ -6,6 +6,7 @@
 
     $user = $_REQUEST['user'];
     $pass = $_REQUEST['pass'];
+    $pass = md5($pass);
 
     $sql = "SELECT * FROM usuarios WHERE usuario = '$user' AND pass = '$pass'
             AND activo = 1";
