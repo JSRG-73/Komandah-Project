@@ -6,11 +6,11 @@
         $usuario = $_SESSION['usuario'];
         $nombre = $_SESSION['nombre'];
         
-        if($rol != 2 && $rol == 1){
-            header("Location: ../Gerente/index.php");
-        } else if($rol != 2 && $rol == 3){
-            header("Location: ../Mesero/index.php");
+        if($rol != 2){
+            header("Location: ../Funciones/Redireccion.php");
         }
+    } else{
+        header("Location: ../index.php");
     }
 ?>
 
@@ -34,15 +34,12 @@
                 <li> <a>Productos</a> 
                     <ul>
                         <!--Faltan los archivos de Baja y modificacion de productos-->
-                        <li><a href="CRUD/productos/producto.php">Alta de producto</a></li>
-                        <li><a href="#">Modificacion de producto</a></li>
-                        <li><a href="CRUD/productos/display.php">Mostrar productos</a></li>
+                        <li><a href="/../display.php">Mostrar productos</a></li>
                     </ul>
                 </li>
 
                 <li> <a>Comandas</a>  
                     <ul>
-                        <li><a href="CRUD/comandas/update.php">Modificacion de comanda</a></li>
                         <li><a href="CRUD/comandas/display.php">Mostrar comandas</a></li>
                     </ul>
                 </li>
