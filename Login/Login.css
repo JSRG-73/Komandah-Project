@@ -1,13 +1,16 @@
 :root{
-    --azul: #2691d9;
+    --azul: #434248;
   }
   body{
-    background-color: #202124;
+    background-color: "white";
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(https://monteverdy.files.wordpress.com/2010/05/colorful-desktop-background-1920x12001.jpg);
+    background-image:url('background.jpg') ;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background:
+        radial-gradient(transparent, black),
+        url("background.jpg");
   }
   .tablero{
     position: absolute;
@@ -15,20 +18,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
-    outline-style: outset;
-    outline-width: 2px;
-    outline-color: #202124;
 
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
   .tablero h1{
     text-align: center;
     padding: 20px 0;
-    border-bottom: 1px groove var(--azul);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   .tablero form{
     padding: 0 40px;
@@ -43,11 +41,12 @@
     width: 100%;
     padding-left: 5px;
     height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     border-bottom: var(--azul);
     background: none;
     outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   .field input{
     width: 100%;

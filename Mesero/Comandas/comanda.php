@@ -29,13 +29,12 @@
                 <!--seleccionar mesa -->
 
                 <h5>Mesa</h5>
-                <select id="numero_mesas" name="numero_mesas" >
+                <select id="mesa" name="mesa" >
                 <?php
                 require "../../Funciones/Conectar.php";
                 $con = conectar();
                 $sql = "SELECT COUNT(*) AS contador FROM mesas;";
                 $resultado = $con->query($sql);
-
                 $row = mysqli_fetch_assoc($resultado);
                 $contador = $row['contador'];
 
@@ -52,6 +51,18 @@
                 <br>
                 <br>
 
+                <?php
+
+                require "../../Funciones/Conectar.php";
+                $con = conectar();
+                $sql = "SELECT COUNT(*) AS contador FROM mesas;";
+                $resultado = $con->query($sql);
+                $row = mysqli_fetch_assoc($resultado);
+                $contador = $row['contador'];
+
+                echo '<input name="cmesas" type="hidden" value="'.$contador.'" form ="form1">';
+
+                ?>
 
                 <!--seleccionar producto -->
 
