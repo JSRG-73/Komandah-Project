@@ -1,4 +1,18 @@
-<?php 
+<?php
+    session_start();
+	if(isset($_SESSION['rol'])){
+        $rol = $_SESSION['rol'];
+		$idU = $_SESSION['idU'];
+        $usuario = $_SESSION['usuario'];
+        $nombre = $_SESSION['nombre'];
+        
+        if($rol != 1){
+            header("Location: .../Funciones/Redireccion.php");
+        }
+    } else{
+        header("Location: .../index.php");
+    }
+
   include("conexion.php");
   if(isset($_POST['register'])){
       $id_empleado = $_GET['updateid'];

@@ -1,3 +1,18 @@
+<?php
+    session_start();
+	if(isset($_SESSION['rol'])){
+        $rol = $_SESSION['rol'];
+		$idU = $_SESSION['idU'];
+        $usuario = $_SESSION['usuario'];
+        $nombre = $_SESSION['nombre'];
+        
+        if($rol != 1){
+            header("Location: ../../Funciones/Redireccion.php");
+        }
+    } else{
+        header("Location: ../../index.php");
+    }
+?>
 <!doctype html>
 <html lang="en">
   <head>
