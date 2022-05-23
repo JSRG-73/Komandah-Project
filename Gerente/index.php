@@ -11,6 +11,8 @@
         } else if($rol != 1 && $rol == 3){
             header("Location: ../Mesero/index.php");
         }
+    } else{
+        header("Location: ../index.php");
     }
 ?>
 <!DOCTYPE html>
@@ -50,6 +52,10 @@
                     <ul>
                         <li><a href="Comandas/comanda.php">Alta de comanda</a></li>
                         <li><a href="Comandas/display.php">Mostrar comandas</a></li>
+                    </ul>
+                </li>
+                <li> <a href="../Funciones/Cerrar_sesion.php">Salir (<?php echo $nombre; ?>)</a> 
+                    <ul>
                     </ul>
                 </li>
             </ul>
