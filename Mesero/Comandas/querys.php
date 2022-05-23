@@ -1,8 +1,12 @@
-<?php
+
+  <?php
   require "../../Funciones/Conectar.php";
     $conexion = conectar();
-    $nombre = $_REQUEST['nombre'];
+    $mesa = $_REQUEST['numero_mesas'];
     $precio = $_REQUEST['precio'];
-    $sql = "INSERT INTO productos(nombre,precio) VALUES ('$nombre','$precio');";
+    $nombre = $_REQUEST['notas'];
+    
+    $sql = "INSERT INTO comandas(id_mesa) VALUES ('$mesa');";
     $respuesta = $conexion -> query($sql);
 ?>
+

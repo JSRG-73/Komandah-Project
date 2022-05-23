@@ -7,7 +7,7 @@ function ValidarDatos(){
 }
 
 function verificarLlenos(){
-    if (ValidarDatos()){
+    if (true){
         document.form1.method = 'post'
         document.form1.action = 'querys.php'
         document.form1.enctype= "multipart/form-data"

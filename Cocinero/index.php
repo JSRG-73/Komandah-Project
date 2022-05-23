@@ -46,6 +46,10 @@
                         <li><a href="CRUD/comandas/display.php">Mostrar comandas</a></li>
                     </ul>
                 </li>
+                <li> <a href="../Funciones/Cerrar_sesion.php">Salir (<?php echo $nombre; ?>)</a> 
+                    <ul>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
