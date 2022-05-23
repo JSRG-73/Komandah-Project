@@ -1,0 +1,27 @@
+#mensaje{
+    display: none;
+    margin: auto;
+    position: relative;
+    top: 70px;
+    width: 240px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: glowBox 0.8s ease-in-out infinite alternate;
+}
+@keyframes glowBox {
+    from{
+        box-shadow: 0 0 15px transparent;
+    }
+    to{
+        box-shadow: 0 0 30px #c13434, 0 0 10px #c74d4d;
+    }
+}

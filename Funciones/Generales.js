@@ -41,3 +41,26 @@ function MostrarMensaje(mensaje, band, time){    /* ID + true/false + tiempo en 
         document.getElementById(mensaje).style.display = "none";
     }
 }
+function azarPerrito(){
+    let aleatorio = Math.floor(Math.random() * 5);
+    switch(aleatorio){
+        case 1:
+            $("#imagenPerrito").attr('src',"./Media/error-pet-dog1.png");
+        break;
+        case 2: 
+            $("#imagenPerrito").attr('src',"./Media/error-pet-dog2.png");
+        break;
+        case 3:
+            $("#imagenPerrito").attr('src',"./Media/error-pet-dog3.png");
+        break;
+        case 4:
+            $("#imagenPerrito").attr('src',"./Media/error-pet-dog4.png");
+        break;
+        case 5:
+            $("#imagenPerrito").attr('src',"./Media/error-pet-dog5.png");
+        break;
+        default:
+            $("#imagenPerrito").attr('src',"./Media/error-pet-dog1.png");
+        break;
+    }
+}

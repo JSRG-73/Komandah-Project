@@ -8,8 +8,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD OPERATION</title>
+    <title>Listado de empleados</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/display.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -31,27 +33,28 @@
       $resultado = mysqli_query($con,$sql);
       if($resultado){
           while($row=mysqli_fetch_assoc($resultado)){ 
-              $id_empleado = $row['id'];
+              $id = $row['id'];
               $nombre = $row['nombre'];
               $usuario = $row['usuario'];
               $rol = $row['rol'];
               echo '<tr>
-              <td>'.$id_empleado.'</td> 
+              <td>'.$id.'</td> 
               <td>'.$nombre.'</td> 
               <td>'.$usuario.'</td> 
               <td>'.$rol.'</td> 
               <td>
-              <button class="btn btn-primary"><a href="update.php? updateid='.$id_empleado.'" class="text-light" >Actualizar</a></button>
-              <button class="btn btn-danger"><a href="delete.php? deleteid='.$id_empleado.'" class="text-light">Eliminar</a></button>
+              <button class=\'button\' onclick=\'eliminarEmpleado($id);\'>Actualizar</a></button>
+              <button class="btn btn-danger"><a href="delete.php?id='.$id.'" class="text-light">Eliminar</a></button>
               </td>
               </tr>';
             }
       }
       ?>
-    
-    
   </tbody>
 </table>
+    </div>
+    <div class="mensaje" id="mensajeEliminar">
+        Mensaje
     </div>
 </body>
 </html>
