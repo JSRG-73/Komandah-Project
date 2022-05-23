@@ -28,8 +28,7 @@ function eliminarEmpleado(id){
             data: 'ID='+id,
             success: function(res){
                 if(res == 1){
-                    $('#row' + id).hide();
-                    $('#mensajeEliminar').html('Registro con ID '+id+ ' eliminado.');
+                    window.location.href = './display.php';
                 } else{
                     $('#mensajeEliminar').html('Error al eliminar.');
                 }

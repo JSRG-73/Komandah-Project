@@ -59,7 +59,7 @@ if(isset($_SESSION['rol'])){
                         <td>'.$descripcion.'</td> 
                         <td>'.$precio.'</td> 
                         <td>
-                          <button class="btn btn-warning"><a href="delete.php?id='.$id.'" class="text-light">(Pending)</a></button>
+                          <button class="btn btn-warning"><a href="delete.php?id='.$id.'" class="text-light">Modificar</a></button>
                           <button class="btn btn-danger"onclick=eliminarProducto('.$id.');>Eliminar</a></button>
                         </td>
                       </tr>';
