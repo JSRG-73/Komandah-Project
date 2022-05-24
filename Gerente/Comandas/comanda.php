@@ -19,7 +19,7 @@
 
 <body>
     <div class="container">
-        <form name="form1">
+        <form name="form1" action="querys.php" method="post">
             <div class="form-group my-5">
 
                 <h1>Crear Komandas</h1>
@@ -38,7 +38,7 @@
                 $row = mysqli_fetch_assoc($resultado);
                 $contador = $row['contador'];
 
-                echo '<select id="numero_mesas" name="numero_mesas" >';
+                echo '<select id="mesa" name="mesa" >';
 
                 foreach (range(1, $contador) as $x) {
 
@@ -124,11 +124,11 @@
 
                 <!--Notas-->
 
-                <textarea id="notas" name="notas" rows="4" cols="50" maxlength="254"></textarea>
+                <input type="text" name="desc">
 
             </div>
 
-            <input type="button" class="btn btn-success name" name="register" value="Agregar comanda" onclick="verificarLlenos(); return false;">
+            <input type="submit" class="btn btn-success name" name="register" value="Agregar comanda"  return false;">
             <!-- La función verificarLlenos también envialos datos a la BD -->
 
             
@@ -136,6 +136,11 @@
 
         </form>
     </div>
+
+    <script>
+        console.log(document.getElementById("producto3"));
+    </script>
+
 </body>
 
 </html>
