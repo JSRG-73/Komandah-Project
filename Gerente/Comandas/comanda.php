@@ -15,6 +15,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -80,7 +81,7 @@
                           <td>' . $id . '</td> 
                           <td>' . $nombre . '</td> 
                           <td>
-                          <select name="producto' . $id . '" id="producto' . $id . '">
+                          <select name="' . $id . '" >
                           
                           <option selected="selected" value="0">0</option>
                           <option value="1">1</option>
@@ -138,8 +139,10 @@
     </div>
 
     <script>
+        console.log("sadfvzsdfc");
         console.log(document.getElementById("producto3"));
     </script>
+    
 
 </body>
 
