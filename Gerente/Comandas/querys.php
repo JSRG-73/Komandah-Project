@@ -44,9 +44,13 @@ $descripcion = $_REQUEST['desc'];
 consolelog($mesa);
 consolelog($descripcion);
 
-$sql = "INSERT INTO comandas(mesa,descripcion) VALUES ('$mesa','$descripcion');";
+
+
+//Crea comandas
+$sql = "INSERT INTO comandas(id_mesa,descripcion) VALUES ('$mesa','$descripcion');";
 $respuesta = $conexion->query($sql);
 
+//Recoge el id de la ultima comanda
 $sql = "SELECT MAX(id_comanda) AS ultima FROM comandas;";
 $resultado = $con->query($sql);
 $row = mysqli_fetch_assoc($resultado);
