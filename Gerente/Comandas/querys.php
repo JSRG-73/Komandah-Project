@@ -44,7 +44,7 @@ $descripcion = $_REQUEST['desc'];
 consolelog($mesa);
 consolelog($descripcion);
 
-$sql = "INSERT INTO comandas(mesa,descripcion) VALUES ('$mesa','$descripcion');";
+$sql = "INSERT INTO comandas(id_mesa,descripcion) VALUES ('$mesa','$descripcion');";
 $respuesta = $conexion->query($sql);
 
 $sql = "SELECT MAX(id_comanda) AS ultima FROM comandas;";
