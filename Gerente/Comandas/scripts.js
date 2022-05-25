@@ -17,3 +17,7 @@ function verificarLlenos(){
         alert("Faltan datos por ingresar");
     }
 }
+
+function marcarCompletada(id){
+    window.location.href = 'completada.php?id='+id;
+}
