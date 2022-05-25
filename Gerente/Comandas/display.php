@@ -102,6 +102,8 @@
 
     </table>
 
+    <button class="btn btn-primary my-5"> <a href="../index.php" class="text-light">Inicio</a></button>
+
 </body>
 
 </html>

@@ -30,6 +30,8 @@
 
                 <h5>Mesa</h5>
 
+                
+
                 <?php
                 require "../../Funciones/Conectar.php";
                 $con = conectar();
@@ -143,7 +145,7 @@
         console.log(document.getElementById("producto3"));
     </script>
     
-
+   
 </body>
 
 </html>
