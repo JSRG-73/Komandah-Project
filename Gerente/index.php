@@ -29,7 +29,17 @@
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
         <nav class="navbar">
+
+            
+
             <ul>
+                <li> <a>Mesas</a> 
+                    <ul>
+                        <!--Faltan los archivos de Baja y modificacion de productos-->
+                        <li><a href="Mesas/mesas.php">Numero de mesas</a></li>
+
+                    </ul>
+                </li>
                 <li><a>Empleados</a> 
                     <ul>
                         <li><a href="Empleados/empleado.php">Alta de empleado</a></li>
