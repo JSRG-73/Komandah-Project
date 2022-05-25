@@ -33,7 +33,10 @@
 
 
 
-    $sql = "TRUNCATE TABLE mesas;";
+    $sql = "DROP TABLE mesas;";
+    $resultado = $con->query($sql);
+
+    $sql = "CREATE TABLE mesas;";
     $resultado = $con->query($sql);
 
     $sql = "INSERT INTO mesas;";
